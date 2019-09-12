@@ -8,5 +8,7 @@ It is possible to have multiple files each with a main function, and VSC runs th
 Surprisingly the producer-consumer example worked as expected, too.
 I was fighting an hour with a bug; the stream controller was defined with generic type int, but it was passed to a function called run-timer without the type value, and then within the run-timer funcion, by mistake I tried to add a string message to the stream; no compile time error, since the parameter didn't have type restriction, I received no exception at run-time, the app simply blocked on the point where I added the string to the stream. 
 
+The accompanying explanation video [Flutter/Dart 93 Butterflies Producer Consumer Concurrent Programming Pattern](https://youtu.be/1Xq64EJgXPg)
+
 This project was created from templates made available by Stagehand under a BSD-style
 [license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
